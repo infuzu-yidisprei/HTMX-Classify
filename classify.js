@@ -8,7 +8,7 @@ htmx.on('htmx:beforeRequest', function(evt) {
 })
 htmx.defineExtension('classify', {
     onEvent: function(name, evt) {
-        if (name === 'htmx:trigger') {
+        if (name === 'htmx:configRequest') {
             const el = evt.detail.elt;
 
             // Find the target element
